@@ -42,7 +42,7 @@
 }
 
 .centered {
-	text-align: center
+	text-align: center;
 }
 
 .mt {
@@ -51,6 +51,10 @@
 
 .mb {
 	margin-bottom: 80px;
+}
+
+.text-center {
+	text-align: justify
 }
 
 /* ==========================================================================
@@ -69,7 +73,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-    color: #4a4a4a;
+    color: #2f2f2f;
 }
 
 
@@ -79,15 +83,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* The home button on the left */
 .navbar-default .navbar-brand {
-	color: #2b2d42;
+	color: #2f2f2f;
 }
 
 /* The background of the header */
-.navbar-default {
-	background-color: #edf2f4;
-	border-color: transparent;
+.navbar-default {	
+	/* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
+	background-color: #ffffff;
+	border: none;
 }
 
+/* Not sure what this does */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #6c88a6;
 	background-color: transparent;
@@ -96,7 +102,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Man Pham Benji George Dang Khoi and so on */
 .navbar-default .navbar-nav > li > a {
-	color: #2b2d42;
+	color: #2f2f2f;
+	font-weight: 400;
 }
 
 /* ==========================================================================
@@ -124,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #headerwrap h1 {
-	color:#ffffff;
+	color:#2f2f2f;
 	letter-spacing: 4px;
 	font-size: 90px;
 	font-weight: bold;
@@ -133,10 +140,10 @@ h1, h2, h3, h4, h5, h6 {
 #headerwrap h2 {
 	font-size: 35px;
 	font-weight: 400;
-	color: #ffffff
+	color: #2f2f2f
 }
 
-#social {
+/* #social {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #f2f2f2;
@@ -144,22 +151,18 @@ h1, h2, h3, h4, h5, h6 {
 
 #social i {
 	font-size: 40px;
-	color: #4a4a4a
+	color: #2f2f2f
 }
 
 #social i:hover {
 	color: #1abc9c
-}
+} */
 
 #footerwrap {
-	padding-top: 70px;
-	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 30px;
 	background-color: #2f2f2f;
-}
-
-#footerwrap p {
 	color: #f2f2f2;
-	margin-left: 10px;
 }
 
 #workwrap {	
@@ -183,8 +186,9 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+
 #workwrap h1 {
-	color:#ffffff;
+	color:#2f2f2f;
 	padding-top: 50px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
@@ -194,35 +198,43 @@ h1, h2, h3, h4, h5, h6 {
 
 #workwrap h4 {
 	font-weight: 400;
-	color: #ffffff
-}
-
-#aboutwrap {	
-	background: url(../img/3.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 550px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	color: #2f2f2f
 }
 
 /* Gallery */
 .gallery {
 	margin-top: 30px;
+	/* white-space: nowrap; */
+	/* cao hon 380 thi profile picture se break */
+	width: 380px;
+	display: inline-block;
+}
+
+.button {
+	background-color: #2f2f2f;
+	border: none;
+	color: #ffffff;  /* this one is not working somehow so I added color below */
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	/* center the button, total must be 100 */
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+}
+
+.button > a {
+	color: #ffffff;
+	text-decoration: none; /* remove the underline */
 }
 
 .gallery img:hover {
 	opacity: 0.4;
+}
+
+.project {
+	font-weight: 700 !important;
 }
