@@ -59,6 +59,12 @@
 	margin-left: 100px;
 }
 
+.img-fit-div {
+	margin-top: 30px;
+	max-width:100%;
+	max-height:100%;
+}
+
 /* ==========================================================================
    General styles
    ========================================================================== */
@@ -75,9 +81,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-    color: #2f2f2f;
+	color: #2f2f2f;
+	font-size: 45px;
 }
 
+p {
+	font-size: 18px;
+	margin-top: 25px;
+}
 
 .navbar-brand {
 	font-weight: 700;
@@ -208,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 30px;
 	/* white-space: nowrap; */
 	/* cao hon 380 thi profile picture se break */
-	width: 380px;
+	width: 320px;
 	display: inline-block;
 }
 
@@ -216,16 +227,13 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #2f2f2f;
 	border: none;
 	color: #ffffff;  /* this one is not working somehow so I added color below */
-	padding: 15px 32px;
+	padding: 17px 60px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 8px;
-	/* center the button, total must be 100 */
-	width: 20%;
-	margin-left: 40%;
-	margin-right: 40%;
+	margin-top: 10px;
 }
 
 .button > a {
