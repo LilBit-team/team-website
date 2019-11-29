@@ -54,7 +54,9 @@
 }
 
 .text-center {
-	text-align: justify
+	text-align: justify;
+	margin-right: 100px;
+	margin-left: 100px;
 }
 
 /* ==========================================================================
@@ -112,11 +114,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #headerwrap {
 	background: url(../img/background1.jpg) no-repeat center top;
-	padding-top: 350px;
+	padding-top: 220px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 1080px;
+	min-height: 650px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
