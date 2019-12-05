@@ -69,13 +69,85 @@
 	<div class="container">
 		<div class="row centered mt mb">
 
-			<h1>Personal Information</h1>
+			<h1>Alcohol Breath Analyzer</h1>
 
-			<div class="text-center"> 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<img class="img-responsive img-fit-div" src="assets/img/pc1.jpg">
+			<div class="text-center">
+				<p>Drinking and driving is a serious problem around the globe. Influences of alcohol have several downsides to driver such as slow reaction time, lack of coordination, reduce concentration, CT which can lead to road crash and even fatality [13]. Alcohol level is measured in blood alcohol content (BAC). Regulations for drinking and driving variate between country but the usual amount is 0.05 percent equivalent to one standard drink. In Vietnam, even though the number of accidents related to alcohol decrease every year, but this number can also be eliminated completely. In the first quarter of 2019, there are more than 50,000 alcohol related cases which is already 50 percent of total cases in 2018 [14][15].</p>
+				<p>The main purpose of this project is to create a device hopefully will help to eliminate drinking and driving around the world. This project will help student to familiarise with Internet of Things, microcomputer, app design, UX/UI as well as electronics. Following are instruments needed for this project:</p>
 			</div>
-			
+
+			<div>
+				<table border="2" class="center mt">
+					<tbody class="left-center">
+						<tr>
+							<td rowspan="4">Input</td>
+							<td>Alcohol Detector</td>
+							<td>To detect alcohol level in the air</td>
+						</tr>
+						<tr>
+							<td>Clock Module</td>
+							<td>For time</td>
+						</tr>
+						<tr>
+							<td>Voltmeter</td>
+							<td>Measure car’s battery voltage level</td>
+						</tr>
+						<tr>
+							<td>Switches</td>
+							<td>To turn on and off</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Processor</td>
+							<td>Raspberry Pi 4</td>
+							<td>Brain of the product which will be used for application and internet connection</td>
+						</tr>
+						<tr>
+							<td>Arduino Uno</td>
+							<td>Brain of the product which will be used to control LED, Motor, LCD panel and take input from alcohol sensor</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Output</td>
+							<td>LED</td>
+							<td>To output light when receive alcohol level</td>
+						</tr>
+						<tr>
+							<td>Servo Motor</td>
+							<td>Simulate car engine</td>
+						</tr>
+						<tr>
+							<td>LCD Panel</td>
+							<td>Display time, alcohol level, power level</td>
+						</tr>
+						<tr>
+							<td rowspan="4">Others</td>
+							<td>Resistors</td>
+							<td>To be connected with electronics and prevent overpower</td>
+						</tr>
+						<tr>
+							<td>Breadboard</td>
+							<td>The base of the product to connect everything together</td>
+						</tr>
+						<tr>
+							<td>DC Power Supplier</td>
+							<td>To simulate car’s battery and power up the rest of the project</td>
+						</tr>
+						<tr>
+							<td>Sim Module for Raspberry Pi</td>
+							<td>To connect with 4G, internet and call relatives</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="text-center mt">
+				<p>The project will be powered by a DC power supplier, this can be either battery packs, laptop battery that have same power output as a car’s battery, we will use what is available and feasible. The power supply will be connected with switch 1, voltmeter, resistors, Arduino Uno and Raspberry Pi. The switch will stimulate when the key is plug in and switch on the car. Voltmeter will measure voltage output and determine battery health level and resistors to regulate power source so that it will be the right amount of power for the processors. LCD panel, alcohol sensor, LED light, clock module and servo motor will be connected to the Arduino. The Arduino will get information’s from the inputs and from these inputs, it will determine what to do. Switch 2 will be connected between the Arduino and the motor which can be simulated as the ignition. The sim module and Arduino will be connected with the Raspberry Pi, it will help to connect with internet and the application.</p>
+				<p>The end product will consider to be fully functional when it’s able to detect alcohol and turn of the car ignition. At normal condition, when switch 1 is turn on, the LCD will show basic information that collected from the inputs such as time, voltage level, alcohol level. While switch 1 is high, if we turn on switch 2, the motor will turn on and start to spin. When alcohol is detected at illegal level, similar thing will happen when switch 1 is turn on but when we turn switch 2 on, the motor will not be spinning. An application will be created to notified when the alcohol level is exceeded and able to track the driver via GPS within the app.</p>
+				<p>Future development can be added when there is regulation for cannabis and THC level when driving for some country.</p>
+				<p><strong>References:</strong></p>
+				<p>[14] Viet Nam News, Ha Noi calls for action against drunk driving, May.13, 2019. [Online]. Available: https://vietnamnews.vn/society/519818/ha-noi-calls-for-action-against-drunk-driving.html#KepY9C3xLuYmUlMp.97</p>
+				<p>[15] B.Ngoc, Vietnam rages against drunk driving as death toll mounts, May.22, 2019. [Online]. Available: https://e.vnexpress.net/news/life/trend/vietnam-rages-against-drunk-driving-as-death-toll-mounts-3922947.html</p>
+			</div>
+
 		</div>
 	</div>
 	
