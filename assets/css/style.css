@@ -244,6 +244,42 @@ li {
 	color: #2f2f2f
 }
 
+#workwrap1 {	
+	background: url(../img/background3.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#workwrap1 h1 {
+	color:#f2f2f2;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 100px;
+	font-weight: bold;
+}
+
+#workwrap1 h4 {
+	font-weight: 400;
+	color: #f2f2f2
+}
+
 /* Gallery */
 .gallery {
 	margin-top: 30px;
